@@ -1,0 +1,250 @@
+/* Reset */
+:root {
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, figure, p, ol, ul {
+  margin: 0;
+}
+
+ol, ul {
+  list-style: none;
+  padding-inline: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+h1{
+  font-size:4rem;
+}
+h2{
+  font-size: 2.5rem;
+}
+
+h3{
+  font-size: 3rem;
+  text-align: left;
+}
+
+img {
+  display: block;
+  max-inline-size: 100%;
+}
+iframe{
+  width: 100%;
+}
+
+/* Styles */
+/* @font-face {
+  font-family: Compacta;
+  src: url(./unicode.compacta.ttf);
+} */
+
+
+html{
+  font-size: 62.5%;
+}
+img{
+  max-width:100%;
+}
+body{
+  --red: #D6483D;
+  --yellow:#FBD64E;
+  --lightYellow:#FEEC8E;
+  --blue: #0F6EAB;
+  --lightBlack: #312D1F;
+  --displayFont: 'Impact', sans-serif;
+  font-size: 1.4em;
+  font-family: 'Noto Sans', sans-serif;
+  background-color: var(--blue);
+}
+ul:focus-within{
+  color:red !important;
+}
+
+h1,h2, h3,h4{
+  font-family: var(--displayFont);
+  color:black;
+}
+.display-font{
+  font-family: var(--displayFont);
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+/* Local stylezz */
+
+.wrapper{
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+nav{
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+
+nav ul li{
+  width: 20%;
+  text-align: center;
+  font-family: var(--displayFont);
+  letter-spacing: 1px;
+  font-size: 2rem;
+  padding:.5rem 0;
+  flex-grow:1;
+}
+nav ul li a{
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  color:black;
+}
+nav ul li a:hover,
+nav ul li:focus-within {
+color:var(--yellow)
+}
+
+nav ul li.long-nav-entry{
+  flex-grow:2;
+}
+
+nav a img{
+  max-height:4rem;
+  padding-left:1rem;
+}
+
+input[type='checkbox']{
+  display: none;
+
+}
+
+section{
+  height: 100%;
+  width:90%;
+  max-width:1400px;
+  margin:0 auto;
+  text-align: center;
+}
+
+table{
+  width: 100%;
+}
+
+ul{
+  display: flex;
+  width: 100%;
+}
+
+ul li img{
+  max-width:7rem;
+}
+
+
+/* Header */
+header{
+  height: 100vh;
+  background-image: url('./img/header.png');
+  background-size: cover;
+  background-position: 50% 50%;  
+
+}
+
+/* Lineup & Set Times */
+table{
+  width: 80%;
+  max-width:1200px;
+  border:3px solid black;
+  background-color: var(--yellow);
+  padding: 1rem;
+}
+th:first-of-type{
+  background-color: transparent;
+}
+th{
+  background-color: var(--lightBlack);
+  color:white;
+}
+tr{
+  background-color: white;
+}
+tr:nth-of-type(2n){
+  background-color: var(--lightYellow);
+}
+td:first-of-type{
+  background-color: var(--red);
+  color:white;
+  text-align: center;
+}
+td{
+  font-style: italic;
+  color:var(--blue);
+  text-transform: uppercase;
+}
+td p + p{
+text-transform:initial;
+}
+
+footer{
+  background-color: lightgray;
+}
+
+/* MQs */
+
+
+@media screen and (max-width:770px){
+  header{
+    height: 60vh;
+  }
+  .spinner{
+    display:block;
+  }
+  nav ul {
+    height:100vh;
+    flex-direction: column;
+    transform:translate(-100%);
+    opacity: 0;
+    position: absolute;
+    width: 250px;
+    transition:all .3s;
+  }
+  nav ul li{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  nav ul li.longNavEntry{
+    flex-grow:1;
+  }
+
+  input[type="checkbox"]:checked ~ #menu {
+    transform: translateX(0);
+    opacity:1;
+  }
+  
+  input[type=checkbox] {
+    transition: all 0.3s;
+    box-sizing: border-box;
+  }
+  .sidebarIconToggle{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    padding: .5rem;
+  }
+  .sidebarIconToggle .hamburger{
+    background-color: black;
+    height: 4px;
+    width:30px;
+  } 
+
+}

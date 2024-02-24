@@ -3,9 +3,157 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Kaila's Bachelorette</title>
 </head>
 <body>
-  <h1> It's the bach</h1>
+  <header>
+    
+    <nav>
+      <a href="#">
+        <img src="./img/KailasBach24_WarpedTourLogo.png" alt="Kaila's Warped Tour logo ">
+      </a>
+      <input type="checkbox" class="openSidebarMenu" id="sidebarIconToggle">
+      <label for="sidebarIconToggle" class="sidebarIconToggle">
+        <div class="hamburger"></div>
+        <div class="hamburger"></div>
+        <div class="hamburger"></div>
+      </label>
+      <ul id="menu">
+        <li><a href="#get-tickets">Get tickets</a></li>
+        <li class="longNavEntry"><a href="#lineup">Lineup & set times</a></li>
+        <li><a href="#travel">Travel</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="wrapper">
+
+    <section>
+      <h1>Presented by</h1>
+      <h2>K&T get married</h2>
+    </section>
+    <section id="lineup">
+      <h2 class="display-font">Lineup & set times</h2>
+      <div class="schedule">
+        <h3 class="display-font">Friday August 16</h3>
+       <table>
+        <th></th>
+        <th class="display-font">Band</th>
+        <th class="display-font">Stage</th>
+        <tr>
+          <td>
+            5:00 - 7:00 pm
+          </td>
+          <td> <span>Pregame</span></td>
+          <td>
+            <p>Hotel</p>
+            <p>hotel address</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            7:30 - 9:30 pm
+          </td>
+          <td> 
+            <p>TOUR DINNER</p>
+            <p>(wristbands only)</p>
+          </td>
+          <td>
+            <p>LA BARTOLA</p>
+            <p>588 College St</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            10:00 pm - ???
+          </td>
+          <td> 
+            <p>Kareoke</p>
+            <p>(wristbands only)</p>
+          </td>
+          <td>
+            <p>ECHO KARAOKE</p>
+            <p>693 Bloor St West</p>
+          </td>
+        </tr>
+       </table>
+        <h3 class="display-font" >SATURDAY AUGUST 17</h3>
+        <table>
+          <th></th>
+          <th class="display-font">Band</th>
+          <th class="display-font">Stage</th>
+          <tr>
+            <td>
+              10:00 - 11:00 am
+            </td>
+            <td> <span>Coffee & Snax</span></td>
+            <td>
+              <p>Hotel</p>
+              <p>hotel address (room TBD)</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              11:30 am - 2:00 pm
+            </td>
+            <td> 
+              <p>BRUNCH</p>
+              <p>(wristbands only)</p>
+            </td>
+            <td>
+              <p>EVVIVA</p>
+              <p>56 WEllesley St W</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              2:00 pm - ???
+            </td>
+            <td> 
+              <p>Daytime pool party</p>
+              <p>(wristbands only)</p>
+            </td>
+            <td>
+              <p>Hotel or Gus Ryder</p>
+              <p>address</p>
+            </td>
+          </tr>
+         </table>
+      </div>
+    </section>
+    <section>
+      <h2 class="display-font">Dress code</h2>
+      <div class="container">
+        <p>wear your best warped tour fits to coordinator with your official merch etc etc</p>
+        <img src="./img/warped-folks.png" alt="People dressed for the Warped Tour">
+      </div>
+    </section>
+    <section id="travel">
+      <ul class="accordion-container">
+        <li>
+          <h3>By car</h3>
+        </li>
+        <li>
+          <h3>By Go transit</h3>
+        </li>
+        <li>
+          <h3>By TTC</h3>
+        </li>
+      </ul>
+
+    </section>
+    <section id="get-tickets">
+      <h2 class="display-font">GET TICKETS!</h2>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfKTzrH9t17XnlyFYkeAgfJWxutK1H2fnSzfq6cpZbbAWUlYg/viewform?embedded=true" width="640" height="563" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </section>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia tenetur blanditiis, harum vel eum, animi quo amet aliquid aliquam consectetur quasi at mollitia maxime veritatis? Quam nulla voluptas saepe a.</p>
+  </div>
+  <footer>
+    <p>Contact Event Staff: charlottemnurse AT gmail DOT com</p>
+  </footer>
 </body>
 </html>
