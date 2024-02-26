@@ -11,28 +11,28 @@
   <title>Kaila's Bachelorette</title>
 </head>
 <body>
+  <nav>
+    <a href="#">
+      <img src="./img/KailasBach24_WarpedTourLogo.png" alt="Kaila's Warped Tour logo ">
+    </a>
+    <input type="checkbox" class="openSidebarMenu" id="sidebarIconToggle">
+    <label for="sidebarIconToggle" class="sidebarIconToggle">
+      <div class="hamburger"></div>
+      <div class="hamburger"></div>
+      <div class="hamburger"></div>
+    </label>
+    <ul id="menu">
+      <li><a href="#get-tickets">Get tickets</a></li>
+      <li class="longNavEntry"><a href="#lineup">Lineup & set times</a></li>
+      <li><a href="#travel">Travel</a></li>
+    </ul>
+  </nav>
   <header>
     
-    <nav>
-      <a href="#">
-        <img src="./img/KailasBach24_WarpedTourLogo.png" alt="Kaila's Warped Tour logo ">
-      </a>
-      <input type="checkbox" class="openSidebarMenu" id="sidebarIconToggle">
-      <label for="sidebarIconToggle" class="sidebarIconToggle">
-        <div class="hamburger"></div>
-        <div class="hamburger"></div>
-        <div class="hamburger"></div>
-      </label>
-      <ul id="menu">
-        <li><a href="#get-tickets">Get tickets</a></li>
-        <li class="longNavEntry"><a href="#lineup">Lineup & set times</a></li>
-        <li><a href="#travel">Travel</a></li>
-      </ul>
-    </nav>
   </header>
   <div class="wrapper">
 
-    <section>
+    <section id="presented">
       <h1>Presented by</h1>
       <h2>K&T get married</h2>
     </section>
@@ -127,21 +127,35 @@
     </section>
     <section>
       <h2 class="display-font">Dress code</h2>
-      <div class="container">
+      <div class="dress-container">
+        <div class="scrim"></div>
         <p>wear your best warped tour fits to coordinator with your official merch etc etc</p>
-        <img src="./img/warped-folks.png" alt="People dressed for the Warped Tour">
       </div>
     </section>
     <section id="travel">
+      <h2 class="display-font">GETTING HERE</h2>
+
       <ul class="accordion-container">
         <li>
-          <h3>By car</h3>
+          <label for="first"><span>By car</span><span class="plus-sign">⬇️</span></label>
+          <input type="radio" name="accordion" id="first" />
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quaerat eos delectus saepe incidunt voluptatum corporis, fugiat eaque fuga! Magni!</p>
+          </div>
         </li>
         <li>
-          <h3>By Go transit</h3>
+          <label for="second">By Go Transit</label>
+          <input type="radio" name="accordion" id="second" />
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quaerat eos delectus saepe incidunt voluptatum corporis, fugiat eaque fuga! Magni!</p>
+          </div>
         </li>
         <li>
-          <h3>By TTC</h3>
+          <label for="third">By TTC</label>
+          <input type="radio" name="accordion" id="third" />
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quaerat eos delectus saepe incidunt voluptatum corporis, fugiat eaque fuga! Magni!</p>
+          </div>
         </li>
       </ul>
 
@@ -150,7 +164,6 @@
       <h2 class="display-font">GET TICKETS!</h2>
       <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfKTzrH9t17XnlyFYkeAgfJWxutK1H2fnSzfq6cpZbbAWUlYg/viewform?embedded=true" width="640" height="563" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     </section>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia tenetur blanditiis, harum vel eum, animi quo amet aliquid aliquam consectetur quasi at mollitia maxime veritatis? Quam nulla voluptas saepe a.</p>
   </div>
   <footer>
     <p>Contact Event Staff: charlottemnurse AT gmail DOT com</p>
