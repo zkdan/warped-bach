@@ -79,6 +79,8 @@ h1,h2, h3,h4{
 .wrapper{
   overflow-y: scroll;
   scroll-behavior: smooth;
+  max-width:900px;
+  margin: 0 auto;
 }
 section{
   height: 100%;
