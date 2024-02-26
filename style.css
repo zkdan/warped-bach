@@ -21,6 +21,7 @@ h1{
 }
 h2{
   font-size: 3.5rem;
+  margin-top:1rem;
 }
 
 h3{
@@ -233,20 +234,58 @@ text-transform:initial;
 /* Travel */
 .accordion-container {
   display: block;
+  text-align: left;
 }
-.accordion-container input[type="radio"]{
+.accordion-container input[type="checkbox"]{
   display:none;
 }
 .accordion-container label {
   display: flex;
-  background-color:pink;
+  background-color: var(--yellow);
   justify-content: space-between;
   padding:.5rem 1rem;
+  font-size: 2.3rem;
+  display: flex;
+  align-items: center;
 }
-
+.content p:first-child{
+  padding-top:1rem;
+}
+.content p:last-child{
+  padding-bottom:1rem;
+}
+.accordion-container .content{
+  max-height: 0;
+  overflow: hidden;
+  transition: all .3s;
+  background-color: var(--lightYellow);
+  padding:0 10%;
+}
+.accordion-container label + input[type="checkbox"]:checked{
+  background-color: var(--lightYellow);
+}
+.accordion-container label + input[type="checkbox"]:checked + .content {
+  max-height: 400px;
+}
+.plus-sign{
+  display: flex;
+  flex-direction: column;
+}
+.plus-sign span{
+  display: block;
+  height:3px;
+  width: 15px;
+  background-color: black;
+}
+.plus-sign span + span{
+  transform: rotate(90deg) translate(-3.1px, -0.2px);
+}
 /* Footer */
 footer{
   background-color: lightgray;
+  text-align: center;
+  padding: 5%;
+  font-weight: bold;
 }
 
 /* MQs */
