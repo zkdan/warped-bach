@@ -77,7 +77,6 @@ h1,h2, h3,h4{
 /* Local stylezz */
 
 .wrapper{
-  overflow-y: scroll;
   scroll-behavior: smooth;
   max-width:900px;
   margin: 0 auto;
@@ -287,6 +286,7 @@ text-transform:initial;
 }
 /* Footer */
 footer{
+  margin-top:2rem;
   background-color: lightgray;
   text-align: center;
   padding: 5%;
