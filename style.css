@@ -160,7 +160,7 @@ input[type='checkbox']{
 /* Header */
 header{
   height: 100vh;
-  background-image: url('./img/header.png');
+  background-image: url('./img/header-small.png');
   background-size: cover;
   background-position: 50% 50%;  
 
@@ -210,7 +210,7 @@ text-transform:initial;
 
 /* Dress */
 .dress-container{
-  background-image: url('./img/warped-folks.png');
+  background-image: url('./img/warped-folks-small.png');
   background-size: cover;
   height:100vh;
   background-position: center;
