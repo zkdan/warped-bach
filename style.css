@@ -172,15 +172,15 @@ header{
   background-image: url('./img/header-with-subhead.png');
   background-size: cover;
   background-position: 50% 50%;  
-  position: relative;
-}
-.badge{
-  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
 }
 
 .badge-right{
-  right:0;
-  top:10px;
+  /* flex-grow:0; */
+  margin-top:10px;
+  margin-right:10px;
   width: 30%;
 }
 
@@ -310,13 +310,14 @@ text-transform:initial;
   flex-direction: column;
 }
 .plus-sign span{
-  display: block;
-  height:3px;
+  /* display: block; */
+  height: 3px;
   width: 15px;
   background-color: black;
 }
 .plus-sign span + span{
   transform: rotate(90deg) translate(-3.1px, -0.2px);
+  z-index: 0;
 }
 .content{
   background-color: var(--yellow);
@@ -336,10 +337,6 @@ footer{
 @media screen and (max-width:770px){
   header{
     height: 60vh;
-  }
-  .badge-right{
-    right:10px;
-    width: 35%;
   }
   h1{
     font-size: 5rem;
