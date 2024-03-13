@@ -25,6 +25,7 @@ h2{
   margin-top:1.7rem;
 }
 
+
 h3{
   font-size: 3rem;
   text-align: left;
@@ -89,6 +90,7 @@ section{
   margin:0 auto;
   text-align: center;
   scroll-behavior: smooth;
+  scroll-margin-top:4rem;
 
 }
 .title{
