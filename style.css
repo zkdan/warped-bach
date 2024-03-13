@@ -22,7 +22,7 @@ h1{
 }
 h2{
   font-size: 3.5rem;
-  margin-top:1rem;
+  margin-top:1.7rem;
 }
 
 h3{
@@ -51,6 +51,7 @@ html{
 img{
   max-width:100%;
 }
+
 body{
   --red: #D6483D;
   --yellow:#FBD64E;
@@ -90,7 +91,19 @@ section{
   scroll-behavior: smooth;
 
 }
-
+.title{
+  font-weight: bold;
+}
+marquee{
+  font-family: var(--displayFont);
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: 1px;
+  background-color: var(--yellow);
+  padding:1rem 0;
+  text-shadow:red 1px 1px;
+  font-size: 1.7rem;
+}
 table{
   width: 100%;
 }
@@ -99,8 +112,9 @@ ul{
   display: flex;
   width: 100%;
 }
+/* Navigation */
 
-ul li img{
+nav li img{
   max-width:7rem;
 }
 
@@ -151,18 +165,30 @@ input[type='checkbox']{
   display: none;
 
 }
-#presented{
-  margin-bottom:2rem;
-  padding-top:2rem;
-}
 
 /* Header */
 header{
   height: 100vh;
-  background-image: url('./img/header-small.png');
+  background-image: url('./img/header-with-subhead.png');
   background-size: cover;
   background-position: 50% 50%;  
+  position: relative;
+}
+.badge{
+  position: absolute;
+}
 
+.badge-right{
+  right:0;
+  top:10px;
+  width: 30%;
+}
+
+/* Presented by */
+
+#presented{
+  margin-bottom:2rem;
+  padding-top:2rem;
 }
 
 /* Lineup & Set Times */
@@ -211,18 +237,21 @@ text-transform:initial;
 .dress-container{
   background-image: url('./img/warped-folks-small.png');
   background-size: cover;
-  height:100vh;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-position: 0 10% ;
   position: relative;
-  font-size: 3rem;
   z-index: -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height:40vh;
 }
 .dress-container p{
+  font-size: 1.5rem;
   width: 80%;
-  z-index: 10;
+  z-index: 100;
+  position: relative;
+  margin: 0 auto;
+  padding-top:1.5rem;
 }
 .scrim{
   position: absolute;
@@ -230,7 +259,7 @@ text-transform:initial;
   left:0;
   right:0;
   bottom:0;
-  opacity:.5;
+  opacity:.78;
   background-color: var(--yellow);
   z-index: 10;
 }
@@ -252,24 +281,29 @@ text-transform:initial;
   display: flex;
   align-items: center;
 }
-.content p:first-child{
-  padding-top:1rem;
-}
-.content p:last-child{
-  padding-bottom:1rem;
-}
 .accordion-container .content{
   max-height: 0;
   overflow: hidden;
   transition: all .3s;
   background-color: var(--lightYellow);
+  /* to keep the content invisible */
   padding:0 10%;
 }
+
+
 .accordion-container label + input[type="checkbox"]:checked{
   background-color: var(--lightYellow);
 }
 .accordion-container label + input[type="checkbox"]:checked + .content {
   max-height: 400px;
+}
+
+.content p {
+  padding-top:1rem;
+  padding-bottom:1rem;
+}
+.parking {
+  margin-bottom:1rem;
 }
 .plus-sign{
   display: flex;
@@ -284,6 +318,11 @@ text-transform:initial;
 .plus-sign span + span{
   transform: rotate(90deg) translate(-3.1px, -0.2px);
 }
+.content{
+  background-color: var(--yellow);
+  padding: 1rem 10%;
+  text-align: left;
+}
 /* Footer */
 footer{
   margin-top:2rem;
@@ -297,6 +336,10 @@ footer{
 @media screen and (max-width:770px){
   header{
     height: 60vh;
+  }
+  .badge-right{
+    right:10px;
+    width: 35%;
   }
   h1{
     font-size: 5rem;
@@ -314,6 +357,7 @@ footer{
     transition:all .3s;
     justify-content: center;
     background-color: white;
+    z-index: 10;
   }
   nav ul li{
     width: 100%;
